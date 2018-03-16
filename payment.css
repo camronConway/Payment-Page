@@ -1,0 +1,89 @@
+#paymentPage h2{
+	color: orange;
+}
+
+#paymentPage img{
+	width: 50pt;
+	height: 50pt;
+}
+
+#paymentPage #payPal img{
+	width: 100pt;
+}
+
+#paymentPage #submit{
+	width: 100pt;
+}
+
+/*Custom Radio button For paymentPage*/
+
+
+/* Customize the label (the container) */
+#paymentPage .container1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+#paymentPage .container1 input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom radio button */
+#paymentPage .checkmark1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+#paymentPage .container1:hover input[type="radio"] ~ .checkmark1 {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+#paymentPage .container1 input[type="radio"]:checked ~ .checkmark1 {
+  background-color: green;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+#paymentPage .checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+#paymentPage .container1 input[type="radio"]:checked ~ .checkmark1:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+#paymentPage .container1 .checkmark1:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+#paymentPage #errorPrint{
+	color: red;
+}
+
+#paymentPage #cvcInfo{
+	font-size: 7pt;
+}
